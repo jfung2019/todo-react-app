@@ -71,14 +71,14 @@ function App() {
         <div>
           <form className="flex w-96">
             <input
-              className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mr-2"
+              className="bg-gray-50 border border-gray-300 text-[#3c335b] rounded-lg block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-[#e7bb87] dark:text-[#e7bb87] mr-2"
               placeholder="Add Todo"
               type="text"
               value={newTask}
               onChange={handleChange}
             />
             <button
-              className="bg-[#e7bb87] rounded-lg p-2 w-28 text-[#3c335b]"
+              className="bg-[#e7bb87] hover:bg-[#da8d36] rounded-lg p-2 w-28 text-[#3c335b]"
               onClick={handleAddTask}
               type="submit">
               Add Task
@@ -92,7 +92,7 @@ function App() {
         <div>
           <form className="flex space-x-2 w-96">
             <input
-              class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 dark:placeholder-[#e7bb87] dark:text-[#e7bb87] rounded-lg block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600"
               placeholder="Update Todo"
               value={updateTask && updateTask.title}
               type="text"
